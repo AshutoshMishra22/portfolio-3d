@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { ABOUT_URL, PROJECT_URL } from '../constant';
 
 const Navbar = () => {
 	return (
@@ -11,16 +12,16 @@ const Navbar = () => {
 			</NavLink>
 			<nav className='flex text-lg gap-7 font-medium'>
 				<NavLink
-					to='/about'
+					to={ABOUT_URL}
 					className={(isActive) => (isActive ? 'text-blue-500' : 'text-black')}
 				>
 					About
 				</NavLink>
 				<NavLink
-					to='/projects'
+					to={PROJECT_URL}
 					className={(isActive) => (isActive ? 'text-blue-500' : 'text-black')}
 				>
-					projects
+					Projects
 				</NavLink>
 			</nav>
 		</header>
