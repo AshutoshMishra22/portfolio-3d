@@ -73,7 +73,7 @@ const Contact = () => {
 
 	const { name, email, message } = formValue;
 	return (
-		<section className='relative flex lg:flex-row flex-col max-container'>
+		<section className='relative flex lg:flex-row flex-col max-container h-[100vh]'>
 			{/* Alert */}
 			{alert.show && <Alert {...alert} />}
 			{/* Contact form */}

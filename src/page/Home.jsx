@@ -1,4 +1,4 @@
-import { Suspense, useState } from 'react';
+import { Suspense, useState, useEffect, useRef } from 'react';
 import { Canvas } from '@react-three/fiber';
 import Island from '../model/Island';
 import Loader from '../component/Loader';
@@ -6,9 +6,26 @@ import Sky from './../model/Sky';
 import Bird from './../model/Bird';
 import Plane from './../model/Plane';
 import HomeInfo from '../component/HomeInfo';
+import sakura from '../assets/sakura.mp3';
+import { soundoff, soundon } from '../assets/icons';
+
 const Home = () => {
 	const [isRotating, setIsRotating] = useState(false);
 	const [currentStage, setCurrentStage] = useState(null);
+	// audio player
+	const [isPlayingMusic, setIsPlayingMusic] = useState(false);
+	const audioRef = useRef(new Audio(sakura));
+	audioRef.current.volume = 0.4;
+	audioRef.current.loop = true;
+	useEffect(() => {
+		if (isPlayingMusic) {
+			audioRef.current.play();
+		}
+		return () => {
+			audioRef.current.pause();
+		};
+	}, [isPlayingMusic]);
+
 	const adjustIslandForScreenSize = () => {
 		let screenScale = null,
 			screenPosition = [0, -6.5, -43],
@@ -78,6 +95,14 @@ const Home = () => {
 					/>
 				</Suspense>
 			</Canvas>
+			<div className='absolute bottom-2 left-2'>
+				<img
+					src={isPlayingMusic ? soundon : soundoff}
+					alt='sound'
+					className='w-10 h-10 cursor-pointer object-contains'
+					onClick={() => setIsPlayingMusic(!isPlayingMusic)}
+				/>
+			</div>
 		</section>
 	);
 };
