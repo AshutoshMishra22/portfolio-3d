@@ -1,4 +1,12 @@
-import { nagarro, tcs } from "./assets/images";
+import {
+  nagarro,
+  tcs,
+  krypt,
+  gpt,
+  digital_wallet,
+  ecommerce,
+  paper,
+} from "./assets/images";
 import {
   car,
   contact,
@@ -162,68 +170,60 @@ const socialLinks = [
   {
     name: "Contact",
     iconUrl: contact,
-    link: "CONTACT_URL",
+    link: CONTACT_URL,
   },
   {
     name: "GitHub",
     iconUrl: github,
-    link: "https://github.com/YourGitHubUsername",
+    link: "https://github.com/AshutoshMishra22",
   },
   {
     name: "LinkedIn",
     iconUrl: linkedin,
-    link: "https://www.linkedin.com/in/YourLinkedInUsername",
+    link: "https://www.linkedin.com/in/ashutosh-mishra-001/",
   },
 ];
 
 const projects = [
   {
-    iconUrl: pricewise,
+    iconUrl: krypt,
     theme: "btn-back-red",
-    name: "Amazon Price Tracker",
+    name: "Krypt",
     description:
-      "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
-    link: "https://github.com/adrianhajdin/pricewise",
+      "PWA using MetaMask for real-time transactions with Etherium. All transactions are logged in etherScan for authenticity and are also available in the latest transaction section.",
+    link: "https://github.com/AshutoshMishra22/nft-react-project",
   },
   {
-    iconUrl: threads,
+    iconUrl: gpt,
     theme: "btn-back-green",
-    name: "Full Stack Threads Clone",
+    name: "OpenAI tool",
     description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: "https://github.com/adrianhajdin/threads",
+      "A PWA for autoregressive language model that uses deep learning to produce human-like text.",
+    link: "https://github.com/AshutoshMishra22/site",
   },
   {
-    iconUrl: car,
+    iconUrl: digital_wallet,
     theme: "btn-back-blue",
-    name: "Car Finding App",
+    name: "Digital Wallet",
     description:
-      "Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.",
-    link: "https://github.com/adrianhajdin/project_next13_car_showcase",
+      "Designed and built a full-responsive web app for product purchase, subscription, bill payment in the market. (Company Restricted)",
+    link: "",
   },
   {
-    iconUrl: snapgram,
-    theme: "btn-back-pink",
-    name: "Full Stack Instagram Clone",
+    iconUrl: ecommerce,
+    theme: "btn-back-blue",
+    name: "E-Commerce Website",
     description:
-      "Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.",
-    link: "https://github.com/adrianhajdin/social_media_app",
+      "A Fully responsive micro-frontend based architecture application, that sells health, beauty, and home care products through a network of independent business owners. (Company Restricted)",
+    link: "",
   },
   {
-    iconUrl: estate,
-    theme: "btn-back-black",
-    name: "Real-Estate Application",
+    iconUrl: paper,
+    theme: "btn-back-blue",
+    name: "Insurance Policy Administration",
     description:
-      "Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.",
-    link: "https://github.com/adrianhajdin/projects_realestate",
-  },
-  {
-    iconUrl: summiz,
-    theme: "btn-back-yellow",
-    name: "AI Summarizer Application",
-    description:
-      "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
-    link: "https://github.com/adrianhajdin/project_ai_summarizer",
+      "Cooperate internal usage application to maintain, track and distribute poilcy and respective products. (Company Restricted)",
+    link: "",
   },
 ];
 
