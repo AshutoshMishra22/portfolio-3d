@@ -1,6 +1,7 @@
 import {
   nagarro,
   tcs,
+  myU,
   krypt,
   gpt,
   digital_wallet,
@@ -152,7 +153,7 @@ const experiences = [
     ],
   },
   {
-    title: "Frontend Lead Developer",
+    title: "Associate Staff Engineer",
     company_name: "Nagarro",
     icon: nagarro,
     iconBg: "#13294b",
@@ -185,6 +186,14 @@ const socialLinks = [
 ];
 
 const projects = [
+  {
+    iconUrl: myU,
+    theme: "btn-back-blue",
+    name: "MyU(My Utility)",
+    description:
+      "MERN PWA Built for saving useful URLs for future references.",
+    link: "https://github.com/AshutoshMishra22/my-utitily",
+  },
   {
     iconUrl: krypt,
     theme: "btn-back-red",

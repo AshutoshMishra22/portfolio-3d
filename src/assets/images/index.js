@@ -7,5 +7,6 @@ import gpt from "./gpt.png";
 import digital_wallet from "./digital_wallet.png";
 import ecommerce from "./ecommerce.png";
 import paper from "./paper.png";
+import myU from './myU.png';
 
-export { hero, logo, tcs, nagarro, paper,ecommerce, digital_wallet, gpt, krypt };
+export { hero, logo, tcs, nagarro, paper,ecommerce, digital_wallet, gpt, krypt, myU };
